@@ -10,6 +10,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+const userRouter = require("./routes/user.route");
+
+app.use("/users", userRouter);
+
 app.listen(port, () => {
     console.log(`Server ready on port ${port}`);
 });
