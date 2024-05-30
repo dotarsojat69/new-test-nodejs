@@ -11,8 +11,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const userRouter = require("./routes/user.route");
+const storeRouter = require("./routes/store.route");
 
 app.use("/users", userRouter);
+app.use("/stores", storeRouter);
 
 app.listen(port, () => {
     console.log(`Server ready on port ${port}`);
