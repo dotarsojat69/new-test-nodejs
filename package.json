@@ -4,6 +4,8 @@
   "description": "Buatkan server menggunakan ORM `Sequelize` dan Database `MySQL`",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +17,8 @@
     "express": "^4.19.2",
     "mysql2": "^3.9.9",
     "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
   }
 }
